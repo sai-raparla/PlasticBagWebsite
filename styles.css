@@ -3,13 +3,8 @@ body {
     font-family: 'Inter', sans-serif;
     /* Simple background gradient */
     background: linear-gradient(to bottom right, #e0f2fe, #bae6fd); /* Light blue gradient */
-    /* Ensure body takes at least full screen height */
+    /* Ensure body takes at least full screen height and centers content */
     min-height: 100vh;
-    /* Use relative positioning to contain the absolute positioned bag */
-    position: relative;
-    /* Prevent horizontal scrollbars caused by bag moving off-screen */
-    overflow-x: hidden;
-    /* Keep main content centered */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,9 +32,6 @@ nav a:hover {
     text-align: center;
     max-width: 48rem; /* max-w-3xl */
     width: 100%;
-    /* Ensure content is above the floating bag */
-    position: relative;
-    z-index: 10;
 }
 
 @media (min-width: 768px) { /* md: breakpoint */
@@ -107,59 +99,4 @@ main {
     text-align: left; /* text-left */
     color: #4b5563; /* text-gray-700 */
 }
-
-/* --- New Styles for Floating Bag --- */
-
-/* Define the animation */
-@keyframes float {
-    0% {
-        transform: translate(0, 0) rotate(0deg);
-        opacity: 0.8;
-    }
-    25% {
-        transform: translate(5vw, -10vh) rotate(15deg); /* Move right and up */
-    }
-    50% {
-        transform: translate(-5vw, -5vh) rotate(-10deg); /* Move left and slightly up */
-        opacity: 0.6;
-    }
-    75% {
-         transform: translate(8vw, 5vh) rotate(5deg); /* Move right and down */
-    }
-    100% {
-        transform: translate(0, 0) rotate(0deg); /* Return to start */
-        opacity: 0.8;
-    }
-}
-
-/* Style the bag element */
-.floating-bag {
-    position: absolute; /* Position relative to the body */
-    top: 50%; /* Start roughly in the middle vertically */
-    left: 50%; /* Start roughly in the middle horizontally */
-    font-size: 5rem; /* Make the emoji large */
-    z-index: 1; /* Place it behind the content container */
-    opacity: 0.8; /* Start slightly transparent */
-    /* Apply the animation */
-    animation-name: float;
-    animation-duration: 20s; /* How long one cycle takes */
-    animation-iteration-count: infinite; /* Loop forever */
-    animation-timing-function: ease-in-out; /* Smooth start and end */
-    /* Prevent user interaction */
-    pointer-events: none;
-    user-select: none;
-}
-
-/* Optional: Add another bag with different timing/position */
-/* You would need to add another div in the HTML like <div class="floating-bag bag-2">🛍️</div> */
-/*
-.floating-bag.bag-2 {
-    top: 20%;
-    left: 10%;
-    font-size: 3rem;
-    animation-duration: 25s;
-    animation-delay: -5s; // Start partway through the animation
-    opacity: 0.5;
-}
-*/
 
