@@ -14,18 +14,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
-        /* Add some basic styling for images within the content */
-        .content-image {
-            max-width: 100%; /* Ensure images don't overflow container */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 0.375rem; /* rounded-md */
-            margin-top: 1rem; /* Add some space above images */
-            margin-bottom: 1rem; /* Add some space below images */
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
-        }
+        /* Basic styling needed if images were present */
+        /* .content-image { ... } */
+        /* Style for lists if needed */
+        /* .facts-list li { ... } */
     </style>
 </head>
-<body> <div class="content-container">
+<body>
+    <div class="content-container">
         <header class="mb-6">
             <h1 class="text-3xl md:text-4xl font-bold text-sky-800">
                 🏭 Born in the Factory
@@ -33,33 +29,28 @@
         </header>
 
         <main class="text-left text-gray-700 space-y-4">
-            <p>The journey of a plastic bag begins long before it reaches your hands, starting with raw materials and an energy-intensive manufacturing process.</p>
 
             <section>
-                <h2 class="text-xl font-semibold text-sky-700 mb-2">Raw Materials: Fossil Fuels</h2>
-                <p>Most single-use plastic bags are made from <strong class="font-semibold">polyethylene</strong>. This plastic is derived from fossil fuels, primarily <strong class="font-semibold">natural gas or petroleum</strong>. Extracting and processing these resources requires significant energy and carries its own environmental footprint.</p>
-                <img src="https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?cs=srgb&dl=pexels-pixabay-247763.jpg&fm=jpg"
-                     alt="Close-up of white plastic pellets (resin)"
-                     class="content-image"
-                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/e0f2fe/0c4a6e?text=Plastic+Pellets';">
-                     </section>
+                <h2 class="text-xl font-semibold text-sky-700 mb-2">Raw Material Impact</h2>
+                <p>The creation of plastic bags starts with fossil fuels, and this initial stage has significant environmental costs:</p>
+                <ul class="list-disc list-inside space-y-1 ml-4 my-3">
+                    <li>It takes approximately <strong class="font-semibold">2.2 billion pounds of fossil fuels</strong> to make plastic bags in the US every year.</li>
+                    <li>The drilling and extraction process can release enormous amounts of <strong class="font-semibold">chemicals into the air</strong>, contributing to air pollution.</li>
+                    <li>The overall production and lifecycle of all plastics contribute significantly to greenhouse gas emissions, estimated at <strong class="font-semibold">1.96 gigatons of CO2 equivalent</strong> globally.</li>
+                </ul>
+            </section>
 
             <section>
                 <h2 class="text-xl font-semibold text-sky-700 mb-2">The Manufacturing Process</h2>
-                <p>The transformation from raw material to finished bag involves several steps:</p>
+                <p>The transformation from raw material (plastic resin pellets) to finished bag involves several energy-intensive steps:</p>
                 <ol class="list-decimal list-inside space-y-2 ml-4">
-                    <li><strong class="font-semibold">Polymerization:</strong> The raw fossil fuel components are chemically processed into long chains, forming plastic polymers. These are typically formed into small pellets known as resin.</li>
-                    <li><strong class="font-semibold">Extrusion:</strong> The plastic resin pellets are melted down and then forced (extruded) through a circular die under heat and pressure. This creates a continuous, thin tube of plastic film.</li>
-                    <li><strong class="font-semibold">Cooling & Shaping:</strong> The tube of molten plastic is inflated with air (like a long balloon) and cooled to solidify it into the desired thickness and width.</li>
-                    <li><strong class="font-semibold">Printing (Optional):</strong> If the bags need logos or text, the flattened tube of film passes through printing presses.</li>
-                    <li><strong class="font-semibold">Cutting & Sealing:</strong> Finally, specialized machines cut the plastic tube to the correct length, seal the bottom edge to form the bag, and punch out handle holes.</li>
+                    <li><strong class="font-semibold">Polymerization:</strong> Raw fossil fuel components are chemically processed into plastic polymers, typically formed into small pellets (resin).</li>
+                    <li><strong class="font-semibold">Extrusion:</strong> The plastic resin pellets are melted and forced (extruded) through a circular die to create a continuous, thin tube of plastic film.</li>
+                    <li><strong class="font-semibold">Cooling & Shaping:</strong> The tube of molten plastic is inflated with air and cooled to solidify it into the desired thickness and width.</li>
+                    <li><strong class="font-semibold">Printing (Optional):</strong> Logos or text might be printed onto the flattened film.</li>
+                    <li><strong class="font-semibold">Cutting & Sealing:</strong> Machines cut the plastic tube, seal the bottom edge, and punch out handle holes.</li>
                 </ol>
-                 <img src="https://www.apmbags.com/sites/default/files/styles/seven-slideshow-7/public/seven-slideshow-images/20151014_111442_HDR.jpg?itok=1nQt-s55"
-                     alt="Plastic bag manufacturing machinery in a factory"
-                     class="content-image"
-                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/e0f2fe/0c4a6e?text=Factory+Machinery';">
-                     <p class="mt-4">This entire process, especially heating the plastic and running the machinery, consumes considerable amounts of energy and water. While each bag is lightweight, the sheer scale of global production adds up to a significant resource demand.</p>
-            </section>
+                 </section>
 
             <nav class="mt-8 pt-4 border-t border-sky-200 flex justify-between">
                  <a href="index.html" class="text-sky-600 hover:text-sky-800 font-medium">← Back Home</a>
