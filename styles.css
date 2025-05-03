@@ -9,10 +9,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem; /* p-6 equivalent */
-    /* Required for absolute positioning of potential background elements */
-    position: relative;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    padding: 1.5rem; /* p-6 */
 }
 
 /* Style for navigation links */
@@ -35,12 +32,8 @@ nav a:hover {
     text-align: center;
     max-width: 48rem; /* max-w-3xl */
     width: 100%;
-    /* Ensure content stays above potential background elements */
-    position: relative;
-    z-index: 10;
 }
 
-/* Responsive padding for the container on medium screens and up */
 @media (min-width: 768px) { /* md: breakpoint */
     .content-container {
         padding: 3rem; /* md:p-12 */
@@ -52,7 +45,6 @@ header {
     margin-bottom: 2rem; /* mb-8 */
 }
 
-/* Header h1 styling */
 header h1 {
     font-size: 2.25rem; /* text-4xl */
     line-height: 2.5rem;
@@ -60,7 +52,6 @@ header h1 {
     color: #0c4a6e; /* text-sky-800 */
 }
 
-/* Responsive h1 size */
 @media (min-width: 768px) { /* md: breakpoint */
     header h1 {
         font-size: 3rem; /* md:text-5xl */
@@ -68,7 +59,6 @@ header h1 {
     }
 }
 
-/* Header paragraph styling */
 header p {
     font-size: 1.125rem; /* text-lg */
     line-height: 1.75rem;
@@ -84,7 +74,6 @@ nav ul {
     gap: 1rem; /* gap-4 */
 }
 
-/* Responsive navigation gap */
 @media (min-width: 768px) { /* md: breakpoint */
     nav ul {
         gap: 1.5rem; /* md:gap-6 */
@@ -110,7 +99,4 @@ main {
     text-align: left; /* text-left */
     color: #4b5563; /* text-gray-700 */
 }
-
-/* NOTE: Styles for .floating-bag animation and .background-text are NOT included here. */
-/* Add them back if those effects are desired. */
 
